@@ -1,0 +1,97 @@
+@media screen and (max-width: 991px) {
+  header .top {
+    padding-inline: 20px;
+  }
+  header .top .left {
+    display: none;
+  }
+  header .bottom {
+    /* margin: 20px 20px; */
+    padding-inline: 40px;
+  }
+  header .bottom .right {
+    display: none;
+  }
+  header .mobile-nav {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(34, 34, 34, 0.9); */
+    background-color: #222222;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    transform: translate(100%);
+    transition: transform 0.5s linear;
+    padding: 20px;
+    overflow-y: hidden;
+  }
+  header .hamburger-mobile {
+    display: block;
+  }
+  header .hamburger-mobile ul li::marker {
+    display: none;
+    color: transparent;
+  }
+  header .hamburger-mobile ul li svg {
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  header .mobile-nav.active {
+    transform: translate(0);
+  }
+  header .mobile-nav .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .mobile-nav .two {
+    margin-top: 36px;
+    height: calc(100vh - 93.64px);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  header .mobile-nav .two .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  header .mobile-nav .two .btn-wrapper button {
+    padding: 6px 30px;
+    border-radius: 49px;
+    border: 2px solid #ff0000;
+    box-shadow: 0px 8px 10px 0px #ff000080;
+    background-color: #222222;
+    color: #fff;
+    font-family: "ClashDisplay";
+    font-size: 24px;
+    cursor: pointer;
+  }
+  header .mobile-nav .one .one-right svg {
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  header .mobile-nav .two ul li {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-family: "poppins", sans-serif;
+  }
+  header .mobile-nav .two ul {
+    list-style: none;
+  }
+
+  header .mobile-nav .two ul a {
+    text-decoration: none;
+  }
+}
